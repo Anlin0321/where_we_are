@@ -1,0 +1,110 @@
+.skip a{
+    position: absolute;
+    top: -40px;
+}
+.skip a:focus{
+    position: absolute;
+    top: 20px;
+}
+
+p {
+    margin: 5px 5px 5px 5px;
+    padding: 30px;
+}
+
+h1{
+    font-weight: bolder;
+}
+
+h1,
+h2,
+p,
+li {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#title, #intro {
+    text-align: center;
+    justify-self: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 80%;
+}
+
+/* #instruction{
+    background-color: lightblue;
+    border-radius: 20px;
+} */
+
+body{
+    background-color: lightblue;
+}
+
+nav ul {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+#map {
+    height: 500px;
+    width:1000px;
+    justify-self: center;
+    border-radius: 100px;
+}
+
+#country {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+#country p {
+    grid-column: 1/-1;
+}
+
+#country img {
+    max-width: 80%;
+}
+
+#country img:hover {
+    box-shadow: 3px 3px 3px black;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: stretch;
+    justify-items: center;
+}
+
+#gallery p {
+    grid-column: 1/-1;
+}
+
+#gallery img {
+    max-width: 80%;
+    border-radius: 10px;
+    border: solid black 5px;
+}
