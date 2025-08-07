@@ -5,14 +5,17 @@ const cities = [
     { latitude: 39.90, longitude: 116.41, name: "Beijing", introduction:"Karn (Tanchavalit Ekkanat)",
         images:[]
     },
-        { latitude: 42.28, longitude: -87.74, name: "Ann Arbor", introduction:"Anlin Ma",
-        images:[]
+    { latitude: 42.28, longitude: -87.74, name: "Ann Arbor", introduction:"Anlin Ma",
+    images:[]
+    },
+    { latitude: 34.05, longitude: -118.24, name: "Los Angeles", introduction:"Aya Shinkawa",
+    images:[]
     },
 ];
 
 
 
-var map = L.map('map').setView([34.32, 100], 4.);
+var map = L.map('map').setView([34.32, 00], 2.);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
