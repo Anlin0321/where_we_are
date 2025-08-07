@@ -23,7 +23,7 @@ cities.map((city, index) => {
     marker.bindPopup(`<b>${city.name}</b>`);
 
     marker.on('click', (e) => {
-        document.querySelector('#gallery').innerHTML = '<p>Who are here:</p>';
+        document.querySelector('#gallery').innerHTML = `<p>Who are in ${city.name}:</p>`;
         document.querySelector('#gallery').innerHTML += `<p>${city.introduction}</p>`;
         city.images.map((image, index) => {
             document.querySelector('#gallery').innerHTML += `<img src=${image.url} alt=${image.alt} >`;
